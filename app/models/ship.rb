@@ -9,7 +9,7 @@ class Ship
   end
   
   def self.clear
-    self.all.destroy
+    self.all.destroy_all
   end 
   
   def initialize(args)
