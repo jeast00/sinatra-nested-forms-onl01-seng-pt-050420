@@ -8,10 +8,16 @@ class Ship
     @@all
   end
   
+  def self.clear
+    self.all.destroy
+  end 
+  
   def initialize(args)
     @name = args[:name]
     @type = args[:type]
     @booty = args[:booty]
     SHIPS << self
   end
+  
+  
 end
