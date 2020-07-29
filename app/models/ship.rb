@@ -9,7 +9,7 @@ class Ship
   end
   
   def self.clear
-    self.all.destroy_all
+    SHIPS = []
   end 
   
   def initialize(args)
